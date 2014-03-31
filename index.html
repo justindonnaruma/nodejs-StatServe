@@ -50,6 +50,17 @@
 $ cd (repo name)
 </code></pre>
 
+          <h4>Step 4: Edit web.js</h4>
+          <p>Edit web.js to reflect the site you are building.</p>
+          <ul>
+              <li><em>Sendgrid API:</em>Setup a username and password with access to the Mail API on your Sendgrid account.</li>
+              <li><em>Email Config:</em> Configure To email to where you want the email to go. configure HTML and Text email with what you want them to send. Use code similar to the code below to pull details from a form.</li>
+          </ul>
+          <pre><code>html: '<html><head></head><body>Name: ' + req.body.name + '<br />' + 'Email: ' + req.body.email + '<br />' + 'Number: ' + req.body.contact_number + '<br />' + 'Message: ' + req.body.message + '</body></html>'
+          </code></pre>
+
+
+
       </section>
     </div>
 
