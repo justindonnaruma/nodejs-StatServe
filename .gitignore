@@ -1,0 +1,11 @@
+# Intellij IDE
+.idea/
+
+# Atlassian Plugin
+atlassian-ide-plugin.xml
+
+# OS X Stuff
+.DS_Store
+
+# NodeJS Stuff
+node_modules/

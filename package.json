@@ -1,0 +1,27 @@
+{
+  "name": "StatServ",
+  "version": "1.0.0",
+  "description": "Static Site Server for NodeJS",
+  "main": "web.js",
+  "dependencies": {
+    "sendgrid": "~1.0.2",
+    "express": "3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "static site",
+    "web server",
+    "nodejs",
+    "express",
+    "indoor"
+  ],
+  "author": "Rumatec (Justin R. Donnaruma)",
+  "license": "MIT License",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
