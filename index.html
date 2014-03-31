@@ -33,6 +33,16 @@
 
 <p>This template for PaaS Static Site serving via NodeJS and ExpressJS is currently designed to be used on Heroku. Alter the Procfile and package.json to your apps specifications. Fork this repository to use for your own projects, or add functionality and submit a pull request.</p>
 
+          <h3>Prerequisites</h3>
+          <ol>
+              <li><a href="http://github.com">Github</a> account</li>
+              <li><a href="http://nodejs.org">NodeJS</a> Installed</li>
+              <li><a href="https://www.npmjs.org/doc/README.htmlnod">npm</a> installed</li>
+              <li><a href="https://www.heroku.com">Heroku</a> Account</li>
+              <li><a href="https://toolbelt.heroku.com">Heroku</a> Toolbelt Installed</li>
+              <li><a href="http://sendgrid.com">Sendgrid</a> account</li>
+          </ol>
+
           <h3> Suggested Workflow </h3>
 
           <h4>Step 1: For this Repo</h4>
@@ -49,6 +59,8 @@
 <pre><code>$ git clone (repo address)
 $ cd (repo name)
 </code></pre>
+          <h4>Step 3a: Install Node Modules</h4>
+          <pre><code>$ npm install</code></pre>
 
           <h4>Step 4: Edit web.js</h4>
           <p>Edit web.js to reflect the site you are building.</p>
@@ -59,7 +71,18 @@ $ cd (repo name)
           <pre><code>html: '&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;Name: ' + req.body.name + '&lt;br /&gt;' + 'Email: ' + req.body.email + '&lt;br /&gt;' + 'Number: ' + req.body.contact_number + '&lt;br /&gt;' + 'Message: ' + req.body.message + '&lt;/body&gt;&lt;/html&gt;'
           </code></pre>
 
+          <h4>Step 5: Build Site!</h4>
+          <p>Build your site in the 'public/' folder. The folder is already nicely laid out for a typical static website build. Change if you want.
+          </p>
 
+          <h4>Step 6: Publish Site!</h4>
+          <p>Publish your site to Heroku!</p>
+          <pre><code>
+              $ heroku login
+              $ heroku create (app/site name)
+              $ heroku git:remote -a (app/site name)
+              $ git push heroku master
+          </code></pre>
 
       </section>
     </div>
